@@ -1,5 +1,5 @@
 //
-//  PhoneViewController.h
+//  HistoryViewController.h
 //  MyTestTabBar
 //
 //  Created by ios on 13-2-20.
@@ -8,7 +8,7 @@
 
 #import "BaseViewController.h"
 
-@interface PhoneViewController : BaseViewController <UITableViewDataSource, UITableViewDelegate>
+@interface HistoryViewController : BaseViewController <UITableViewDelegate, UITableViewDataSource>
 @property (nonatomic, strong) UITableView *myTable;
 @property (nonatomic, strong) NSMutableArray *myArray;
 @end

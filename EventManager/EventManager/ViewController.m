@@ -8,9 +8,9 @@
 
 #import "ViewController.h"
 #import "HomeViewController.h"
-#import "PhoneViewController.h"
+#import "ActionViewController.h"
+#import "HistoryViewController.h"
 #import "SettingViewController.h"
-#import "UserCenterViewController.h"
 #import "BaseViewController.h"
 @interface ViewController ()
 
@@ -36,13 +36,13 @@
     HomeViewController *view1 = [[HomeViewController alloc] init];
     UINavigationController *nav1 = [[UINavigationController alloc] initWithRootViewController:view1];
     nav1.navigationBar.translucent = NO;
-    PhoneViewController *view2 = [[PhoneViewController alloc] init];
+    ActionViewController *view2 = [[ActionViewController alloc] init];
     UINavigationController *nav2 = [[UINavigationController alloc] initWithRootViewController:view2];
     nav2.navigationBar.translucent = NO;
-    UserCenterViewController *view4 = [[UserCenterViewController alloc] init];
+    SettingViewController *view4 = [[SettingViewController alloc] init];
     UINavigationController *nav4 = [[UINavigationController alloc] initWithRootViewController:view4];
     nav4.navigationBar.translucent = NO;
-    SettingViewController *view3 = [[SettingViewController alloc] init];
+    HistoryViewController *view3 = [[HistoryViewController alloc] init];
     UINavigationController *nav3 = [[UINavigationController alloc] initWithRootViewController:view3];
     nav3.navigationBar.translucent = NO;
 
