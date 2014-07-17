@@ -48,7 +48,7 @@
 }
 
 - (void)click {
-    if ([text.text isEqual:@"7673"]) {
+    if ([text.text isEqual:@"yangardenia"]) {
         [self.navigationController dismissViewControllerAnimated:YES completion:nil];
     } else {
         UIAlertView *alert = [[UIAlertView alloc] initWithTitle:nil message:@"密码不对" delegate:nil cancelButtonTitle:nil otherButtonTitles:@"ok", nil];
