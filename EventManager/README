@@ -1,0 +1,5 @@
+coredata的简单升级和复杂升级
+coredata的简单升级和复杂升级
+1）升级：选中Event.xcdatamodeld->editor->add model Version-> 一步步操作
+2）选中Event.xcdatamodeld -> 右边属性栏model version currentVersion 选中当前的数据库
+3）删掉entity类“Events.*”,newfile to project ->codata -> nsmanagedObjectSubClass 选到当前的model的entity就行了，然后就可以在代码中去调用entity的变量
