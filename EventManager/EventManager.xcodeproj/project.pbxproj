@@ -27,17 +27,10 @@
 		E47F2EE017FAFEA800AFF229 /* ViewController_iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = E47F2EDE17FAFEA800AFF229 /* ViewController_iPad.xib */; };
 		E47F2EF417FB01B900AFF229 /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E47F2EEB17FB01B900AFF229 /* BaseViewController.m */; };
 		E47F2EF517FB01B900AFF229 /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E47F2EED17FB01B900AFF229 /* HomeViewController.m */; };
-		E47F2EF617FB01B900AFF229 /* PhoneViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E47F2EEF17FB01B900AFF229 /* PhoneViewController.m */; };
-		E47F2EF717FB01B900AFF229 /* SettingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E47F2EF117FB01B900AFF229 /* SettingViewController.m */; };
-		E47F2EF817FB01B900AFF229 /* UserCenterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E47F2EF317FB01B900AFF229 /* UserCenterViewController.m */; };
-		E47F2EFA17FB022C00AFF229 /* tabbar_selected.png in Resources */ = {isa = PBXBuildFile; fileRef = E47F2EF917FB022C00AFF229 /* tabbar_selected.png */; };
+		E47F2EF617FB01B900AFF229 /* ActionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E47F2EEF17FB01B900AFF229 /* ActionViewController.m */; };
+		E47F2EF717FB01B900AFF229 /* HistoryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E47F2EF117FB01B900AFF229 /* HistoryViewController.m */; };
+		E47F2EF817FB01B900AFF229 /* SettingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E47F2EF317FB01B900AFF229 /* SettingViewController.m */; };
 		E47F2EFD17FB02DF00AFF229 /* UIViewAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = E47F2EFC17FB02DF00AFF229 /* UIViewAdditions.m */; };
-		E47F2F0417FB055A00AFF229 /* menuBG.png in Resources */ = {isa = PBXBuildFile; fileRef = E47F2EFE17FB055900AFF229 /* menuBG.png */; };
-		E47F2F0617FB055A00AFF229 /* menuicon_one.png in Resources */ = {isa = PBXBuildFile; fileRef = E47F2F0017FB055A00AFF229 /* menuicon_one.png */; };
-		E47F2F0717FB055A00AFF229 /* menuicon_ser.png in Resources */ = {isa = PBXBuildFile; fileRef = E47F2F0117FB055A00AFF229 /* menuicon_ser.png */; };
-		E47F2F0817FB055A00AFF229 /* menuicon_set.png in Resources */ = {isa = PBXBuildFile; fileRef = E47F2F0217FB055A00AFF229 /* menuicon_set.png */; };
-		E47F2F1117FB07A200AFF229 /* navbuttonnormal.png in Resources */ = {isa = PBXBuildFile; fileRef = E47F2F0F17FB07A200AFF229 /* navbuttonnormal.png */; };
-		E47F2F1217FB07A200AFF229 /* navbuttonnormal.png@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E47F2F1017FB07A200AFF229 /* navbuttonnormal.png@2x.png */; };
 		E47F2F1517FB086400AFF229 /* GuideController.m in Sources */ = {isa = PBXBuildFile; fileRef = E47F2F1417FB086400AFF229 /* GuideController.m */; };
 		E496361617FD564D00524B3F /* EMListCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E496361517FD564D00524B3F /* EMListCell.m */; };
 		E496361D17FD621100524B3F /* AddEventsController.m in Sources */ = {isa = PBXBuildFile; fileRef = E496361C17FD621100524B3F /* AddEventsController.m */; };
@@ -78,21 +71,14 @@
 		E47F2EEB17FB01B900AFF229 /* BaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseViewController.m; sourceTree = "<group>"; };
 		E47F2EEC17FB01B900AFF229 /* HomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeViewController.h; sourceTree = "<group>"; };
 		E47F2EED17FB01B900AFF229 /* HomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeViewController.m; sourceTree = "<group>"; };
-		E47F2EEE17FB01B900AFF229 /* PhoneViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PhoneViewController.h; sourceTree = "<group>"; };
-		E47F2EEF17FB01B900AFF229 /* PhoneViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PhoneViewController.m; sourceTree = "<group>"; };
-		E47F2EF017FB01B900AFF229 /* SettingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingViewController.h; sourceTree = "<group>"; };
-		E47F2EF117FB01B900AFF229 /* SettingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingViewController.m; sourceTree = "<group>"; };
-		E47F2EF217FB01B900AFF229 /* UserCenterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserCenterViewController.h; sourceTree = "<group>"; };
-		E47F2EF317FB01B900AFF229 /* UserCenterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserCenterViewController.m; sourceTree = "<group>"; };
-		E47F2EF917FB022C00AFF229 /* tabbar_selected.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tabbar_selected.png; sourceTree = "<group>"; };
+		E47F2EEE17FB01B900AFF229 /* ActionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ActionViewController.h; sourceTree = "<group>"; };
+		E47F2EEF17FB01B900AFF229 /* ActionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ActionViewController.m; sourceTree = "<group>"; };
+		E47F2EF017FB01B900AFF229 /* HistoryViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HistoryViewController.h; sourceTree = "<group>"; };
+		E47F2EF117FB01B900AFF229 /* HistoryViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HistoryViewController.m; sourceTree = "<group>"; };
+		E47F2EF217FB01B900AFF229 /* SettingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingViewController.h; sourceTree = "<group>"; };
+		E47F2EF317FB01B900AFF229 /* SettingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingViewController.m; sourceTree = "<group>"; };
 		E47F2EFB17FB02DF00AFF229 /* UIViewAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = UIViewAdditions.h; path = ../UIViewAdditions.h; sourceTree = "<group>"; };
 		E47F2EFC17FB02DF00AFF229 /* UIViewAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = UIViewAdditions.m; path = ../UIViewAdditions.m; sourceTree = "<group>"; };
-		E47F2EFE17FB055900AFF229 /* menuBG.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = menuBG.png; sourceTree = "<group>"; };
-		E47F2F0017FB055A00AFF229 /* menuicon_one.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = menuicon_one.png; sourceTree = "<group>"; };
-		E47F2F0117FB055A00AFF229 /* menuicon_ser.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = menuicon_ser.png; sourceTree = "<group>"; };
-		E47F2F0217FB055A00AFF229 /* menuicon_set.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = menuicon_set.png; sourceTree = "<group>"; };
-		E47F2F0F17FB07A200AFF229 /* navbuttonnormal.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = navbuttonnormal.png; sourceTree = "<group>"; };
-		E47F2F1017FB07A200AFF229 /* navbuttonnormal.png@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "navbuttonnormal.png@2x.png"; sourceTree = "<group>"; };
 		E47F2F1317FB086400AFF229 /* GuideController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GuideController.h; sourceTree = "<group>"; };
 		E47F2F1417FB086400AFF229 /* GuideController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GuideController.m; sourceTree = "<group>"; };
 		E496361417FD564D00524B3F /* EMListCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EMListCell.h; sourceTree = "<group>"; };
@@ -167,7 +153,6 @@
 				E47F2F0D17FB074F00AFF229 /* Suports */,
 				E47F2F0C17FB072300AFF229 /* Views */,
 				E47F2F0B17FB071900AFF229 /* Controllers */,
-				E47F2F0A17FB06E600AFF229 /* img */,
 				E47F2ECF17FAFEA800AFF229 /* AppDelegate.h */,
 				E47F2ED017FAFEA800AFF229 /* AppDelegate.m */,
 				E47F2EC717FAFEA800AFF229 /* Supporting Files */,
@@ -191,23 +176,13 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		E47F2F0A17FB06E600AFF229 /* img */ = {
-			isa = PBXGroup;
-			children = (
-				E47F2F0F17FB07A200AFF229 /* navbuttonnormal.png */,
-				E47F2F1017FB07A200AFF229 /* navbuttonnormal.png@2x.png */,
-				E47F2EF917FB022C00AFF229 /* tabbar_selected.png */,
-				E47F2EFE17FB055900AFF229 /* menuBG.png */,
-				E47F2F0017FB055A00AFF229 /* menuicon_one.png */,
-				E47F2F0117FB055A00AFF229 /* menuicon_ser.png */,
-				E47F2F0217FB055A00AFF229 /* menuicon_set.png */,
-			);
-			name = img;
-			sourceTree = "<group>";
-		};
 		E47F2F0B17FB071900AFF229 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				FC04D9651977DB8100678AAA /* Action */,
+				FC04D9641977DB6E00678AAA /* Login */,
+				FC04D9631977DB6600678AAA /* Setting */,
+				FC04D9621977DB5C00678AAA /* History */,
 				E496361A17FD61EA00524B3F /* AddEvents */,
 				E47F2F1317FB086400AFF229 /* GuideController.h */,
 				E47F2F1417FB086400AFF229 /* GuideController.m */,
@@ -215,14 +190,6 @@
 				E47F2ED917FAFEA800AFF229 /* ViewController.m */,
 				E47F2EEC17FB01B900AFF229 /* HomeViewController.h */,
 				E47F2EED17FB01B900AFF229 /* HomeViewController.m */,
-				E47F2EEE17FB01B900AFF229 /* PhoneViewController.h */,
-				E47F2EEF17FB01B900AFF229 /* PhoneViewController.m */,
-				E47F2EF017FB01B900AFF229 /* SettingViewController.h */,
-				E47F2EF117FB01B900AFF229 /* SettingViewController.m */,
-				E47F2EF217FB01B900AFF229 /* UserCenterViewController.h */,
-				E47F2EF317FB01B900AFF229 /* UserCenterViewController.m */,
-				B7E3583418FFA2AA00EA0B60 /* LoginViewController.h */,
-				B7E3583518FFA2AA00EA0B60 /* LoginViewController.m */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -273,6 +240,42 @@
 				E41F231217FD766700830914 /* EventsTool.m */,
 			);
 			name = Model;
+			sourceTree = "<group>";
+		};
+		FC04D9621977DB5C00678AAA /* History */ = {
+			isa = PBXGroup;
+			children = (
+				E47F2EF017FB01B900AFF229 /* HistoryViewController.h */,
+				E47F2EF117FB01B900AFF229 /* HistoryViewController.m */,
+			);
+			name = History;
+			sourceTree = "<group>";
+		};
+		FC04D9631977DB6600678AAA /* Setting */ = {
+			isa = PBXGroup;
+			children = (
+				E47F2EF217FB01B900AFF229 /* SettingViewController.h */,
+				E47F2EF317FB01B900AFF229 /* SettingViewController.m */,
+			);
+			name = Setting;
+			sourceTree = "<group>";
+		};
+		FC04D9641977DB6E00678AAA /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				B7E3583418FFA2AA00EA0B60 /* LoginViewController.h */,
+				B7E3583518FFA2AA00EA0B60 /* LoginViewController.m */,
+			);
+			name = Login;
+			sourceTree = "<group>";
+		};
+		FC04D9651977DB8100678AAA /* Action */ = {
+			isa = PBXGroup;
+			children = (
+				E47F2EEE17FB01B900AFF229 /* ActionViewController.h */,
+				E47F2EEF17FB01B900AFF229 /* ActionViewController.m */,
+			);
+			name = Action;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -333,13 +336,6 @@
 				E47F2ED717FAFEA800AFF229 /* Default-568h@2x.png in Resources */,
 				E47F2EDD17FAFEA800AFF229 /* ViewController_iPhone.xib in Resources */,
 				E47F2EE017FAFEA800AFF229 /* ViewController_iPad.xib in Resources */,
-				E47F2EFA17FB022C00AFF229 /* tabbar_selected.png in Resources */,
-				E47F2F0417FB055A00AFF229 /* menuBG.png in Resources */,
-				E47F2F0617FB055A00AFF229 /* menuicon_one.png in Resources */,
-				E47F2F0717FB055A00AFF229 /* menuicon_ser.png in Resources */,
-				E47F2F0817FB055A00AFF229 /* menuicon_set.png in Resources */,
-				E47F2F1117FB07A200AFF229 /* navbuttonnormal.png in Resources */,
-				E47F2F1217FB07A200AFF229 /* navbuttonnormal.png@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -355,9 +351,9 @@
 				E47F2EDA17FAFEA800AFF229 /* ViewController.m in Sources */,
 				E47F2EF417FB01B900AFF229 /* BaseViewController.m in Sources */,
 				E47F2EF517FB01B900AFF229 /* HomeViewController.m in Sources */,
-				E47F2EF617FB01B900AFF229 /* PhoneViewController.m in Sources */,
-				E47F2EF717FB01B900AFF229 /* SettingViewController.m in Sources */,
-				E47F2EF817FB01B900AFF229 /* UserCenterViewController.m in Sources */,
+				E47F2EF617FB01B900AFF229 /* ActionViewController.m in Sources */,
+				E47F2EF717FB01B900AFF229 /* HistoryViewController.m in Sources */,
+				E47F2EF817FB01B900AFF229 /* SettingViewController.m in Sources */,
 				E47F2EFD17FB02DF00AFF229 /* UIViewAdditions.m in Sources */,
 				E47F2F1517FB086400AFF229 /* GuideController.m in Sources */,
 				E4A7DF1617FC1BDE004A227E /* Event.xcdatamodeld in Sources */,

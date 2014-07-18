@@ -1,5 +1,5 @@
 //
-//  SettingViewController.h
+//  UserCenterViewController.h
 //  MyTestTabBar
 //
 //  Created by ios on 13-2-20.
@@ -8,7 +8,6 @@
 
 #import "BaseViewController.h"
 
-@interface SettingViewController : BaseViewController <UITableViewDelegate, UITableViewDataSource>
-@property (nonatomic, strong) UITableView *myTable;
-@property (nonatomic, strong) NSMutableArray *myArray;
+@interface SettingViewController : BaseViewController
+
 @end

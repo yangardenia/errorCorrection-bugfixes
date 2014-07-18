@@ -1,20 +1,20 @@
 //
-//  PhoneViewController.m
+//  ActionViewController.m
 //  MyTestTabBar
 //
 //  Created by ios on 13-2-20.
 //  Copyright (c) 2013年 liujianzhong. All rights reserved.
 //
 
-#import "PhoneViewController.h"
+#import "ActionViewController.h"
 #import "EMListCell.h"
 #import "EventStoreManager.h"
 
-@interface PhoneViewController ()
+@interface ActionViewController ()
 
 @end
 
-@implementation PhoneViewController
+@implementation ActionViewController
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
