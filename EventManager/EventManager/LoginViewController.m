@@ -9,9 +9,9 @@
 #import "LoginViewController.h"
 
 @interface LoginViewController ()
-{
-    UITextField *text;
-}
+
+@property (nonatomic, strong) UITextField *passwordInput;
+
 @end
 
 @implementation LoginViewController
@@ -30,12 +30,12 @@
     [super viewDidLoad];
     [self.view setBackgroundColor:[UIColor lightGrayColor]];
 
-    text = [[UITextField alloc] initWithFrame:CGRectMake(85, 150, 150, 30)];
-    text.keyboardType = UIKeyboardTypePhonePad;
-    text.placeholder = @"输入密码";
-    [text becomeFirstResponder];
-    text.borderStyle = UITextBorderStyleLine;
-    [self.view addSubview:text];
+    self.passwordInput = [[UITextField alloc] initWithFrame:CGRectMake(85, 150, 150, 30)];
+    self.passwordInput.keyboardType = UIKeyboardTypePhonePad;
+    self.passwordInput.placeholder = @"输入密码";
+    [self.passwordInput becomeFirstResponder];
+    self.passwordInput.borderStyle = UITextBorderStyleLine;
+    [self.view addSubview:self.passwordInput];
     
     UIButton *login = [UIButton buttonWithType:UIButtonTypeCustom];
     login.frame = CGRectMake(10, 200, 300, 30);
@@ -48,7 +48,7 @@
 }
 
 - (void)click {
-    if ([text.text isEqual:@"yangardenia"]) {
+    if ([self.passwordInput.text isEqual:@"yangardenia"]) {
         [self.navigationController dismissViewControllerAnimated:YES completion:nil];
     } else {
         UIAlertView *alert = [[UIAlertView alloc] initWithTitle:nil message:@"密码不对" delegate:nil cancelButtonTitle:nil otherButtonTitles:@"ok", nil];

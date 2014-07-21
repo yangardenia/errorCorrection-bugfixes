@@ -11,7 +11,10 @@
 #import "EventStoreManager.h"
 #import "AddEventsController.h"
 
-@interface HistoryViewController ()
+@interface HistoryViewController () <UITableViewDelegate, UITableViewDataSource>
+
+@property (nonatomic, strong) UITableView *myTable;
+@property (nonatomic, strong) NSMutableArray *myArray;
 
 @end
 
@@ -21,8 +24,7 @@
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
     if (self) {
-        self.title = @"历史";
-        self.myArray = [NSMutableArray array];
+        [self initUI];
         // Custom initialization
     }
     return self;
@@ -43,6 +45,11 @@
 - (void)viewWillAppear:(BOOL)animated {
     [super viewWillAppear:animated];
     [self reloadData];
+}
+
+- (void)initUI {
+    self.title = @"历史";
+    self.myArray = [NSMutableArray array];
 }
 
 - (void)reloadData {
@@ -76,6 +83,5 @@
     [cell valueOfTableCell:[self.myArray objectAtIndex:indexPath.row] withIndex:indexPath];
     return cell;
 }
-
 
 @end

@@ -9,7 +9,5 @@
 #import <UIKit/UIKit.h>
 
 @interface ViewController : UITabBarController <UITabBarControllerDelegate>
-{
 
-}
 @end

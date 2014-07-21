@@ -8,7 +8,6 @@
 
 #import "BaseViewController.h"
 
-@interface ActionViewController : BaseViewController <UITableViewDataSource, UITableViewDelegate>
-@property (nonatomic, strong) UITableView *myTable;
-@property (nonatomic, strong) NSMutableArray *myArray;
+@interface ActionViewController : BaseViewController 
+
 @end

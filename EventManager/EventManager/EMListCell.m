@@ -11,72 +11,92 @@
 
 @implementation EMListCell
 
+#pragma mark - lifeCycleMethods
 - (id)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier
 {
     self = [super initWithStyle:style reuseIdentifier:reuseIdentifier];
     if (self) {
-        title = [[UILabel alloc] initWithFrame:CGRectMake(10, 3, 300, 20)];
-        title.textAlignment = NSTextAlignmentLeft;
-        title.textColor = [UIColor redColor];
-        title.font = [UIFont systemFontOfSize:14];
-        [self.contentView addSubview:title];
-
-        level = [[UILabel alloc] initWithFrame:CGRectMake(10, 23, 100, 20)];
-        level.textAlignment = NSTextAlignmentLeft;
-        level.textColor = [UIColor lightGrayColor];
-        level.font = [UIFont systemFontOfSize:12];
-        [self.contentView addSubview:level];
-
-        status = [[UILabel alloc] initWithFrame:CGRectMake(70, 23, 100, 20)];
-        status.textAlignment = NSTextAlignmentLeft;
-        status.textColor = [UIColor lightGrayColor];
-        status.font = [UIFont systemFontOfSize:12];
-        [self.contentView addSubview:status];
-
-        time = [[UILabel alloc] initWithFrame:CGRectMake(150, 23, 160, 20)];
-        time.textAlignment = NSTextAlignmentLeft;
-        time.textColor = [UIColor lightGrayColor];
-        time.font = [UIFont systemFontOfSize:12];
-        [self.contentView addSubview:time];
-
-        descript = [[UILabel alloc] initWithFrame:CGRectMake(10, 43, 300, 27)];
-        descript.textAlignment = NSTextAlignmentLeft;
-        descript.textColor = [UIColor lightGrayColor];
-        descript.numberOfLines = 0;
-        descript.lineBreakMode = NSLineBreakByWordWrapping;
-        descript.font = [UIFont systemFontOfSize:12];
-        [self.contentView addSubview:descript];
-
         // Initialization code
     }
     return self;
 }
 
+#pragma mark - getter & setter Methods
+- (UILabel *)title {
+    if (_title == nil) {
+        _title = [[UILabel alloc] initWithFrame:CGRectMake(10, 3, 300, 20)];
+        _title.textAlignment = NSTextAlignmentLeft;
+        _title.textColor = [UIColor redColor];
+        _title.font = [UIFont systemFontOfSize:14];
+        [self.contentView addSubview:_title];
+    }
+    return _title;
+}
+
+- (UILabel *)level {
+    if (_level == nil) {
+        _level = [[UILabel alloc] initWithFrame:CGRectMake(10, 23, 100, 20)];
+        _level.textAlignment = NSTextAlignmentLeft;
+        _level.textColor = [UIColor lightGrayColor];
+        _level.font = [UIFont systemFontOfSize:12];
+        [self.contentView addSubview:_level];
+    }
+    return _level;
+}
+
+- (UILabel *)status {
+    if (_status == nil) {
+        _status = [[UILabel alloc] initWithFrame:CGRectMake(70, 23, 100, 20)];
+        _status.textAlignment = NSTextAlignmentLeft;
+        _status.textColor = [UIColor lightGrayColor];
+        _status.font = [UIFont systemFontOfSize:12];
+        [self.contentView addSubview:_status];
+    }
+    return _status;
+}
+
+- (UILabel *)time {
+    if (_time == nil) {
+        _time = [[UILabel alloc] initWithFrame:CGRectMake(150, 23, 160, 20)];
+        _time.textAlignment = NSTextAlignmentLeft;
+        _time.textColor = [UIColor lightGrayColor];
+        _time.font = [UIFont systemFontOfSize:12];
+        [self.contentView addSubview:_time];
+    }
+    return _time;
+}
+
+- (UILabel *)descript {
+    if (_descript == nil) {
+        _descript = [[UILabel alloc] initWithFrame:CGRectMake(10, 43, 300, 27)];
+        _descript.textAlignment = NSTextAlignmentLeft;
+        _descript.textColor = [UIColor lightGrayColor];
+        _descript.numberOfLines = 0;
+        _descript.lineBreakMode = NSLineBreakByWordWrapping;
+        _descript.font = [UIFont systemFontOfSize:12];
+        [self.contentView addSubview:_descript];
+    }
+    return _descript;
+}
+
+#pragma mark - ResetValuesMethods
 -(void)valueOfTableCell:(id)object withIndex:(NSIndexPath *)indexPath{
     if([object isKindOfClass:[EventsTool class]]){
         EventsTool *events = (EventsTool *)object;
-        title.text = [NSString stringWithFormat:@"标题_%d:%@", [indexPath row] +1, events.name];
-        level.text = [NSString stringWithFormat:@"优先级:%@", events.level];
-        status.text  = [NSString stringWithFormat:@"状态:%@", events.status];
+        self.title.text = [NSString stringWithFormat:@"标题_%d:%@", [indexPath row] +1, events.name];
+        self.level.text = [NSString stringWithFormat:@"优先级:%@", events.level];
+        self.status.text  = [NSString stringWithFormat:@"状态:%@", events.status];
         NSDateFormatter *dateFormatrer = [[NSDateFormatter alloc] init];
         dateFormatrer.dateFormat = @"yyyy-MM-dd HH:mm:ss";
         dateFormatrer.timeZone = [NSTimeZone timeZoneWithName:@"Asia/Shanghai"];
         
         NSString *tempStr = [dateFormatrer stringFromDate:events.time];
         
-        time.text = [NSString stringWithFormat:@"时间:%@", tempStr];
-        descript.text = [NSString stringWithFormat:@"描述:%@", events.descrip];
+        self.time.text = [NSString stringWithFormat:@"时间:%@", tempStr];
+        self.descript.text = [NSString stringWithFormat:@"描述:%@", events.descrip];
     }else{
         return;
     }
-    
-}
-
-- (void)setSelected:(BOOL)selected animated:(BOOL)animated
-{
-    [super setSelected:selected animated:animated];
-
-    // Configure the view for the selected state
 }
 
 @end

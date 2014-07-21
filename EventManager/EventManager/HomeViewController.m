@@ -81,19 +81,13 @@
 }
 
 -(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
-static NSString *cellIdent = @"EMListCell";
+    static NSString *cellIdent = @"EMListCell";
     EMListCell *cell = [tableView dequeueReusableCellWithIdentifier:cellIdent];
     if(cell == nil) {
         cell = [[EMListCell alloc]initWithStyle:UITableViewCellStyleDefault reuseIdentifier:cellIdent];
     }
     [cell valueOfTableCell:[dataSource objectAtIndex:indexPath.row] withIndex:indexPath];
     return cell;
-}
-
-- (void)didReceiveMemoryWarning
-{
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
 }
 
 -(void)addEvents{

@@ -31,7 +31,6 @@
 		E47F2EF717FB01B900AFF229 /* HistoryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E47F2EF117FB01B900AFF229 /* HistoryViewController.m */; };
 		E47F2EF817FB01B900AFF229 /* SettingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E47F2EF317FB01B900AFF229 /* SettingViewController.m */; };
 		E47F2EFD17FB02DF00AFF229 /* UIViewAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = E47F2EFC17FB02DF00AFF229 /* UIViewAdditions.m */; };
-		E47F2F1517FB086400AFF229 /* GuideController.m in Sources */ = {isa = PBXBuildFile; fileRef = E47F2F1417FB086400AFF229 /* GuideController.m */; };
 		E496361617FD564D00524B3F /* EMListCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E496361517FD564D00524B3F /* EMListCell.m */; };
 		E496361D17FD621100524B3F /* AddEventsController.m in Sources */ = {isa = PBXBuildFile; fileRef = E496361C17FD621100524B3F /* AddEventsController.m */; };
 		E4A7DF1617FC1BDE004A227E /* Event.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = E4A7DF1417FC1BDE004A227E /* Event.xcdatamodeld */; };
@@ -79,8 +78,6 @@
 		E47F2EF317FB01B900AFF229 /* SettingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingViewController.m; sourceTree = "<group>"; };
 		E47F2EFB17FB02DF00AFF229 /* UIViewAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = UIViewAdditions.h; path = ../UIViewAdditions.h; sourceTree = "<group>"; };
 		E47F2EFC17FB02DF00AFF229 /* UIViewAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = UIViewAdditions.m; path = ../UIViewAdditions.m; sourceTree = "<group>"; };
-		E47F2F1317FB086400AFF229 /* GuideController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GuideController.h; sourceTree = "<group>"; };
-		E47F2F1417FB086400AFF229 /* GuideController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GuideController.m; sourceTree = "<group>"; };
 		E496361417FD564D00524B3F /* EMListCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EMListCell.h; sourceTree = "<group>"; };
 		E496361517FD564D00524B3F /* EMListCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EMListCell.m; sourceTree = "<group>"; };
 		E496361B17FD621100524B3F /* AddEventsController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddEventsController.h; sourceTree = "<group>"; };
@@ -119,7 +116,6 @@
 			isa = PBXGroup;
 			children = (
 				B7E989A318FE79D90084C0F2 /* README */,
-				E4A7DF1A17FC28D5004A227E /* CoreData.framework */,
 				E47F2EC617FAFEA800AFF229 /* EventManager */,
 				E47F2EBF17FAFEA800AFF229 /* Frameworks */,
 				E47F2EBE17FAFEA800AFF229 /* Products */,
@@ -137,6 +133,7 @@
 		E47F2EBF17FAFEA800AFF229 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				E4A7DF1A17FC28D5004A227E /* CoreData.framework */,
 				E47F2EC017FAFEA800AFF229 /* UIKit.framework */,
 				E47F2EC217FAFEA800AFF229 /* Foundation.framework */,
 				E47F2EC417FAFEA800AFF229 /* CoreGraphics.framework */,
@@ -184,8 +181,6 @@
 				FC04D9631977DB6600678AAA /* Setting */,
 				FC04D9621977DB5C00678AAA /* History */,
 				E496361A17FD61EA00524B3F /* AddEvents */,
-				E47F2F1317FB086400AFF229 /* GuideController.h */,
-				E47F2F1417FB086400AFF229 /* GuideController.m */,
 				E47F2ED817FAFEA800AFF229 /* ViewController.h */,
 				E47F2ED917FAFEA800AFF229 /* ViewController.m */,
 				E47F2EEC17FB01B900AFF229 /* HomeViewController.h */,
@@ -355,7 +350,6 @@
 				E47F2EF717FB01B900AFF229 /* HistoryViewController.m in Sources */,
 				E47F2EF817FB01B900AFF229 /* SettingViewController.m in Sources */,
 				E47F2EFD17FB02DF00AFF229 /* UIViewAdditions.m in Sources */,
-				E47F2F1517FB086400AFF229 /* GuideController.m in Sources */,
 				E4A7DF1617FC1BDE004A227E /* Event.xcdatamodeld in Sources */,
 				E496361617FD564D00524B3F /* EMListCell.m in Sources */,
 				E496361D17FD621100524B3F /* AddEventsController.m in Sources */,
@@ -462,7 +456,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "EventManager/EventManager-Prefix.pch";
 				INFOPLIST_FILE = "EventManager/EventManager-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
@@ -480,7 +474,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "EventManager/EventManager-Prefix.pch";
 				INFOPLIST_FILE = "EventManager/EventManager-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";

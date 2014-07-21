@@ -7,7 +7,6 @@
 //
 
 #import "AppDelegate.h"
-#import "GuideController.h"
 #import "ViewController.h"
 
 @implementation AppDelegate
