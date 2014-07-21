@@ -8,6 +8,17 @@
 	<string>myAPP</string>
 	<key>CFBundleExecutable</key>
 	<string>${EXECUTABLE_NAME}</string>
+	<key>CFBundleIcons</key>
+	<dict>
+		<key>CFBundlePrimaryIcon</key>
+		<dict>
+			<key>CFBundleIconFiles</key>
+			<array>
+				<string>114x114</string>
+				<string>57x57</string>
+			</array>
+		</dict>
+	</dict>
 	<key>CFBundleIdentifier</key>
 	<string>www.netcoc.com</string>
 	<key>CFBundleInfoDictionaryVersion</key>
