@@ -8,7 +8,6 @@
 
 #import "BaseViewController.h"
 
-@interface HistoryViewController : BaseViewController <UITableViewDelegate, UITableViewDataSource>
-@property (nonatomic, strong) UITableView *myTable;
-@property (nonatomic, strong) NSMutableArray *myArray;
+@interface HistoryViewController : BaseViewController 
+
 @end

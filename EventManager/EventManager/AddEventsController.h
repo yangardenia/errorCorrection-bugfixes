@@ -11,10 +11,11 @@
 
 @interface AddEventsController : UIViewController <UITextViewDelegate, UIScrollViewDelegate>
 {
-    UITextField *textTitle;
-    UITextField *textLevel;
-    UITextView *textDescript;
+
 
 }
+@property (nonatomic,strong) UITextField *textTitle;
+@property (nonatomic,strong) UITextField *textLevel;
+@property (nonatomic,strong) UITextView *textDescript;
 @property (nonatomic, strong) EventsTool *eventObj;
 @end

@@ -22,7 +22,7 @@
 - (void)assignPropertiesFromMappedObject:(EventsTool *)event {
     self.descrip = event.descrip;
     self.level = event.level;
-#warning 为什么不加上ident
+#warning 为什么不加上ident，
     self.name = event.name;
     self.parentId = event.parentId;
     self.status = event.status;

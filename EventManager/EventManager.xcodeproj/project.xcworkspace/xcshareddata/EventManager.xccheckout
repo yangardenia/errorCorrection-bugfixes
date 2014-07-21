@@ -5,34 +5,34 @@
 	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
 	<false/>
 	<key>IDESourceControlProjectIdentifier</key>
-	<string>544C8EAB-1555-419D-8778-D997B93EE779</string>
+	<string>ED790F2D-F7A9-43B2-BF82-AFC520A0E783</string>
 	<key>IDESourceControlProjectName</key>
 	<string>EventManager</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
-		<key>D3D3E6F4-97D6-4ACB-A5F5-3BFFF701A586</key>
-		<string>https://github.com/jianzhongliu/errorCorrection-bugfixes.git</string>
+		<key>2835B81A-A28E-477A-89A3-B72D504C5B23</key>
+		<string>https://github.com/yangardenia/errorCorrection-bugfixes.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
 	<string>EventManager/EventManager.xcodeproj/project.xcworkspace</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
-		<key>D3D3E6F4-97D6-4ACB-A5F5-3BFFF701A586</key>
+		<key>2835B81A-A28E-477A-89A3-B72D504C5B23</key>
 		<string>../../..</string>
 	</dict>
 	<key>IDESourceControlProjectURL</key>
-	<string>https://github.com/jianzhongliu/errorCorrection-bugfixes.git</string>
+	<string>https://github.com/yangardenia/errorCorrection-bugfixes.git</string>
 	<key>IDESourceControlProjectVersion</key>
 	<integer>110</integer>
 	<key>IDESourceControlProjectWCCIdentifier</key>
-	<string>D3D3E6F4-97D6-4ACB-A5F5-3BFFF701A586</string>
+	<string>2835B81A-A28E-477A-89A3-B72D504C5B23</string>
 	<key>IDESourceControlProjectWCConfigurations</key>
 	<array>
 		<dict>
 			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
 			<string>public.vcs.git</string>
 			<key>IDESourceControlWCCIdentifierKey</key>
-			<string>D3D3E6F4-97D6-4ACB-A5F5-3BFFF701A586</string>
+			<string>2835B81A-A28E-477A-89A3-B72D504C5B23</string>
 			<key>IDESourceControlWCCName</key>
 			<string>errorCorrection-bugfixes</string>
 		</dict>

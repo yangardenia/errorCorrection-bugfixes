@@ -10,7 +10,10 @@
 #import "EMListCell.h"
 #import "EventStoreManager.h"
 
-@interface ActionViewController ()
+@interface ActionViewController () <UITableViewDataSource, UITableViewDelegate>
+
+@property (nonatomic, strong) UITableView *myTable;
+@property (nonatomic, strong) NSMutableArray *myArray;
 
 @end
 
@@ -30,34 +33,33 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-//    [self.view setBackgroundColor:[UIColor blueColor]];
-    
+    [self initUI];
+	// Do any additional setup after loading the view.
+}
+
+- (void)viewWillAppear:(BOOL)animated {
+    [super viewWillAppear:animated];
+    [self reloadData];
+}
+
+- (void)initUI {
     self.myTable = [[UITableView alloc] initWithFrame:self.view.frame style:UITableViewStylePlain];
     self.myTable.height = self.view.height - 66;
     self.myTable.dataSource = self;
     self.myTable.delegate = self;
     [self.view addSubview:self.myTable];
-	// Do any additional setup after loading the view.
-}
-- (void)viewWillAppear:(BOOL)animated {
-    [super viewWillAppear:animated];
-    [self reloadData];
 }
 
 - (void)reloadData {
     [self.myArray removeAllObjects];
     [self.myArray addObjectsFromArray:[[EventStoreManager sharedManager] fetchEventList]];
     [self.myTable reloadData];
-
 }
-#pragma mark - UITableViewDelegate
+
+#pragma mark - UITableViewDelegate & UITableViewDataSource
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
     [[EventStoreManager sharedManager] updateEventsOfDelete:[self.myArray objectAtIndex:indexPath.row]];
     [self reloadData];
-//    AddEventsController *controller = [[AddEventsController alloc] init];
-//    controller.eventObj = [dataSource objectAtIndex:indexPath.row];
-//    [controller setHidesBottomBarWhenPushed:YES];
-//    [self.navigationController pushViewController:controller animated:YES];
 }
 
 -(CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{

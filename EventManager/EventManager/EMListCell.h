@@ -9,14 +9,13 @@
 #import <UIKit/UIKit.h>
 
 @interface EMListCell : UITableViewCell
-{
-    UILabel *title;
-    UILabel *time;
-    UILabel *descript;
-    UILabel *level;
-    UILabel *status;
-    UILabel *index;
-}
+
+@property (nonatomic, strong) UILabel *title;
+@property (nonatomic, strong) UILabel *time;
+@property (nonatomic, strong) UILabel *descript;
+@property (nonatomic, strong) UILabel *level;
+@property (nonatomic, strong) UILabel *status;
+@property (nonatomic, strong) UILabel *index;
 
 -(void)valueOfTableCell:(id)object withIndex:(NSIndexPath *)indexPath;
 
